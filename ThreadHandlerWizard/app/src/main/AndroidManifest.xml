@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.threadhandlerwizard">
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ThreadHandlerWizard">
+
+        <!-- 啟動頁：有 intent-filter，一定要寫 exported -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 其他頁面（沒有 intent-filter）就不用寫 exported -->
+        <!-- 如果你還有別的 Activity 而且也有 intent-filter，就比照辦理加 android:exported -->
+        <!--
+        <activity android:name=".SomeOtherActivity" />
+        -->
+
+    </application>
+</manifest>
