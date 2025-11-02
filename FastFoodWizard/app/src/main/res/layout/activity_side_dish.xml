@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="選擇副餐（可多選）"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/cbFries"
+        android:text="薯條" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/cbSalad"
+        android:text="沙拉" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <CheckBox
+        android:id="@+id/cbNuggets"
+        android:text="雞塊" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSaveSide"
+        android:text="儲存副餐"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
